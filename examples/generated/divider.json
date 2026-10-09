@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "kind": "cross-lap",
+  "units": "mm",
+  "sideA": {
+    "id": "sideA",
+    "contours": [
+      {
+        "id": "outline",
+        "role": "outer",
+        "nominal": {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              38.375,
+              0
+            ],
+            [
+              38.375,
+              25.05
+            ],
+            [
+              41.625,
+              25.05
+            ],
+            [
+              41.625,
+              0
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              80,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "pathData": "M0 0 L38.375 0 L38.375 25.05 L41.625 25.05 L41.625 0 L80 0 L80 50 L0 50 Z",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 50
+          }
+        },
+        "toolpath": {
+          "points": [
+            [
+              -0.09,
+              -0.09
+            ],
+            [
+              38.465,
+              -0.09
+            ],
+            [
+              38.465,
+              24.96
+            ],
+            [
+              41.535,
+              24.96
+            ],
+            [
+              41.535,
+              -0.09
+            ],
+            [
+              80.09,
+              -0.09
+            ],
+            [
+              80.09,
+              50.09
+            ],
+            [
+              -0.09,
+              50.09
+            ]
+          ],
+          "pathData": "M-0.09 -0.09 L38.465 -0.09 L38.465 24.96 L41.535 24.96 L41.535 -0.09 L80.09 -0.09 L80.09 50.09 L-0.09 50.09 Z",
+          "bounds": {
+            "x": -0.09,
+            "y": -0.09,
+            "width": 80.18,
+            "height": 50.18000000000001
+          }
+        }
+      }
+    ],
+    "bounds": {
+      "x": -0.09,
+      "y": -0.09,
+      "width": 80.18,
+      "height": 50.18000000000001
+    }
+  },
+  "sideB": {
+    "id": "sideB",
+    "contours": [
+      {
+        "id": "outline",
+        "role": "outer",
+        "nominal": {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              80,
+              50
+            ],
+            [
+              41.525,
+              50
+            ],
+            [
+              41.525,
+              24.95
+            ],
+            [
+              38.475,
+              24.95
+            ],
+            [
+              38.475,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "pathData": "M0 0 L80 0 L80 50 L41.525 50 L41.525 24.95 L38.475 24.95 L38.475 50 L0 50 Z",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 50
+          }
+        },
+        "toolpath": {
+          "points": [
+            [
+              -0.09,
+              -0.09
+            ],
+            [
+              80.09,
+              -0.09
+            ],
+            [
+              80.09,
+              50.09
+            ],
+            [
+              41.435,
+              50.09
+            ],
+            [
+              41.435,
+              25.04
+            ],
+            [
+              38.565,
+              25.04
+            ],
+            [
+              38.565,
+              50.09
+            ],
+            [
+              -0.09,
+              50.09
+            ]
+          ],
+          "pathData": "M-0.09 -0.09 L80.09 -0.09 L80.09 50.09 L41.435 50.09 L41.435 25.04 L38.565 25.04 L38.565 50.09 L-0.09 50.09 Z",
+          "bounds": {
+            "x": -0.09,
+            "y": -0.09,
+            "width": 80.18,
+            "height": 50.18000000000001
+          }
+        }
+      }
+    ],
+    "bounds": {
+      "x": -0.09,
+      "y": -0.09,
+      "width": 80.18,
+      "height": 50.18000000000001
+    }
+  },
+  "edges": {
+    "sideA": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          38.375,
+          0
+        ],
+        [
+          38.375,
+          25.05
+        ],
+        [
+          41.625,
+          25.05
+        ],
+        [
+          41.625,
+          0
+        ],
+        [
+          80,
+          0
+        ]
+      ],
+      "pathData": "M0 0 L38.375 0 L38.375 25.05 L41.625 25.05 L41.625 0 L80 0",
+      "closed": false,
+      "compensation": "none",
+      "materialSide": "positive-y"
+    },
+    "sideB": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          38.475,
+          0
+        ],
+        [
+          38.475,
+          25.05
+        ],
+        [
+          41.525,
+          25.05
+        ],
+        [
+          41.525,
+          0
+        ],
+        [
+          80,
+          0
+        ]
+      ],
+      "pathData": "M0 0 L38.475 0 L38.475 25.05 L41.525 25.05 L41.525 0 L80 0",
+      "closed": false,
+      "compensation": "none",
+      "materialSide": "positive-y"
+    }
+  },
+  "measurements": {
+    "heightMm": 50,
+    "widthMm": 80,
+    "depthMm": 25.05,
+    "depthClearanceMm": 0.1,
+    "notchWidthAMm": 3.25,
+    "notchWidthBMm": 3.05,
+    "clearanceMm": 0.05
+  },
+  "fits": {
+    "sideA": {
+      "nominalClearanceMm": 0.04999999999999982,
+      "minimumClearanceMm": 0.04999999999999982,
+      "maximumClearanceMm": 0.04999999999999982,
+      "classification": "clearance"
+    },
+    "sideB": {
+      "nominalClearanceMm": 0.04999999999999982,
+      "minimumClearanceMm": 0.04999999999999982,
+      "maximumClearanceMm": 0.04999999999999982,
+      "classification": "clearance"
+    }
+  },
+  "issues": [
+    {
+      "code": "SHARP_INTERNAL_CORNERS",
+      "severity": "warning",
+      "message": "Nominal square recesses do not model beam rounding, taper or material stress. Test the fit; use relief where appropriate."
+    }
+  ],
+  "machining": {
+    "compensation": "geometry",
+    "kerfMm": {
+      "sideA": 0.18,
+      "sideB": 0.18
+    },
+    "additionalOffsetMm": {
+      "sideA": 0,
+      "sideB": 0
+    }
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "index": 0,
+    "clearanceMm": -0.1,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": -0.09999999999999964,
+        "minimumClearanceMm": -0.09999999999999964,
+        "maximumClearanceMm": -0.09999999999999964,
+        "classification": "interference"
+      },
+      "thickness": {
+        "nominalClearanceMm": -0.10000000000000009,
+        "minimumClearanceMm": -0.10000000000000009,
+        "maximumClearanceMm": -0.10000000000000009,
+        "classification": "interference"
+      }
+    }
+  },
+  {
+    "index": 1,
+    "clearanceMm": -0.05,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": -0.05000000000000071,
+        "minimumClearanceMm": -0.05000000000000071,
+        "maximumClearanceMm": -0.05000000000000071,
+        "classification": "interference"
+      },
+      "thickness": {
+        "nominalClearanceMm": -0.04999999999999982,
+        "minimumClearanceMm": -0.04999999999999982,
+        "maximumClearanceMm": -0.04999999999999982,
+        "classification": "interference"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "clearanceMm": 0,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": 0,
+        "minimumClearanceMm": 0,
+        "maximumClearanceMm": 0,
+        "classification": "line-to-line"
+      },
+      "thickness": {
+        "nominalClearanceMm": 0,
+        "minimumClearanceMm": 0,
+        "maximumClearanceMm": 0,
+        "classification": "line-to-line"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "clearanceMm": 0.05,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": 0.05000000000000071,
+        "minimumClearanceMm": 0.05000000000000071,
+        "maximumClearanceMm": 0.05000000000000071,
+        "classification": "clearance"
+      },
+      "thickness": {
+        "nominalClearanceMm": 0.04999999999999982,
+        "minimumClearanceMm": 0.04999999999999982,
+        "maximumClearanceMm": 0.04999999999999982,
+        "classification": "clearance"
+      }
+    }
+  },
+  {
+    "index": 4,
+    "clearanceMm": 0.1,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": 0.09999999999999964,
+        "minimumClearanceMm": 0.09999999999999964,
+        "maximumClearanceMm": 0.09999999999999964,
+        "classification": "clearance"
+      },
+      "thickness": {
+        "nominalClearanceMm": 0.10000000000000009,
+        "minimumClearanceMm": 0.10000000000000009,
+        "maximumClearanceMm": 0.10000000000000009,
+        "classification": "clearance"
+      }
+    }
+  },
+  {
+    "index": 5,
+    "clearanceMm": 0.15,
+    "fits": {
+      "width": {
+        "nominalClearanceMm": 0.15000000000000036,
+        "minimumClearanceMm": 0.15000000000000036,
+        "maximumClearanceMm": 0.15000000000000036,
+        "classification": "clearance"
+      },
+      "thickness": {
+        "nominalClearanceMm": 0.1499999999999999,
+        "minimumClearanceMm": 0.1499999999999999,
+        "maximumClearanceMm": 0.1499999999999999,
+        "classification": "clearance"
+      }
+    }
+  }
+]

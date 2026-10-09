@@ -1,0 +1,89 @@
+{
+  "name": "@mylasertools/laser-joints",
+  "version": "0.1.0",
+  "description": "Matching laser-cut joints, keyed fingers, dovetail splices, and assembled boxes with explicit kerf, clearance, calibration, and diagnostics.",
+  "type": "module",
+  "license": "MIT",
+  "author": "MyLaserTools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylasertools-com/laser-joints.git"
+  },
+  "homepage": "https://mylasertools-com.github.io/laser-joints/demo/",
+  "bugs": {
+    "url": "https://github.com/mylasertools-com/laser-joints/issues"
+  },
+  "keywords": [
+    "laser-cutting",
+    "finger-joint",
+    "tab-slot",
+    "cross-lap",
+    "kerf",
+    "svg",
+    "fabrication",
+    "typescript"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "bin": {
+    "laser-joints": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsx scripts/build.ts",
+    "test": "tsx scripts/test.ts",
+    "check": "npm run build && npm run typecheck && npm test && npm run size",
+    "size": "tsx scripts/size.ts",
+    "test:package": "tsx scripts/check-package.ts",
+    "examples": "tsx scripts/examples.ts",
+    "demo": "tsx scripts/serve.ts",
+    "build:demo": "tsx scripts/build-demo.ts",
+    "build:site": "npm run build:demo && tsx scripts/build-site.ts",
+    "test:browser": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepack": "npm run check",
+    "capture": "tsx scripts/capture.ts",
+    "typecheck": "tsc -p tsconfig.json --emitDeclarationOnly && tsc -p tsconfig.tools.json"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@types/node": "20.19.43",
+    "@types/three": "0.179.0",
+    "clipper2-ts": "2.0.1-18",
+    "esbuild": "0.25.12",
+    "prettier": "3.6.2",
+    "three": "0.179.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

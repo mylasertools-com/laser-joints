@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore matching laser-cut joints, keyed fingers, dovetail splices, and a complete assembled box. A local, open-source MyLaserTools playground."
+    />
+    <title>Laser Joints — MyLaserTools</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="https://www.mylasertools.com/"
+        ><span class="brand-mark" aria-hidden="true">⌑</span> MYLASERTOOLS
+        <span class="slash">/</span> <span>OPEN SOURCE</span></a
+      ><a href="../docs/API.md">API reference ↗</a>
+    </header>
+    <main>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">SMALL PARTS. PRECISE CONNECTIONS.</p>
+          <h1>Good joints.<br /><em>Built together.</em></h1>
+          <p class="intro">
+            Matching geometry for the things you make.<br />Set the dimensions. Inspect the fit.
+            Take the SVG.
+          </p>
+        </div>
+        <div class="hero-aside">
+          <span class="tag">@mylasertools/laser-joints</span>
+          <p>Finger · Keyed · Tab & slot<br />Cross-lap · Dovetail · Box</p>
+          <span class="local"><i></i> Runs entirely in your browser</span>
+        </div>
+      </div>
+      <div class="workspace">
+        <aside class="controls">
+          <div class="section-label"><span>01</span> Choose a connection</div>
+          <div class="joint-picker" role="group" aria-label="Joint type">
+            <button data-kind="box" aria-pressed="true">
+              <span aria-hidden="true">▱</span> Full box</button
+            ><button data-kind="finger" aria-pressed="false">
+              <span aria-hidden="true">▤</span> Finger</button
+            ><button data-kind="keyed" aria-pressed="false">
+              <span aria-hidden="true">▥</span> Keyed</button
+            ><button data-kind="tab-slot" aria-pressed="false">
+              <span aria-hidden="true">⊞</span> Tab & slot</button
+            ><button data-kind="cross-lap" aria-pressed="false">
+              <span aria-hidden="true">╋</span> Cross-lap</button
+            ><button data-kind="dovetail" aria-pressed="false">
+              <span aria-hidden="true">⋈</span> Dovetail
+            </button>
+          </div>
+          <form id="settings">
+            <div class="section-label"><span>02</span> Make it yours <small>mm</small></div>
+            <div id="specific" class="field-grid"></div>
+            <div class="rule"></div>
+            <div class="field-grid">
+              <label
+                >Measured thickness<input
+                  id="thickness"
+                  type="number"
+                  min="0.1"
+                  max="50"
+                  step="0.05"
+                  value="3"
+                  required /></label
+              ><label
+                >Full kerf width<input
+                  id="kerf"
+                  type="number"
+                  min="0"
+                  max="5"
+                  step="0.01"
+                  value="0.15"
+                  required /></label
+              ><label class="wide"
+                >Total clearance <output id="clearance-value">+0.08 mm</output
+                ><input
+                  id="clearance"
+                  type="range"
+                  min="-0.2"
+                  max="0.5"
+                  step="0.01"
+                  value="0.08"
+                /><span class="range-labels"
+                  ><span>Interference</span><span>Clearance</span></span
+                ></label
+              >
+            </div>
+            <details>
+              <summary>Process & tolerances</summary>
+              <div class="field-grid">
+                <label
+                  >Minimum feature<input
+                    id="minFeature"
+                    type="number"
+                    min="0"
+                    step="0.1"
+                    value="0" /></label
+                ><label
+                  >Minimum web<input
+                    id="minWeb"
+                    type="number"
+                    min="0"
+                    step="0.1"
+                    value="0" /></label
+                ><label
+                  >Cut tolerance ±<input
+                    id="cutTolerance"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    value="0" /></label
+                ><label
+                  >Thickness tolerance ±<input
+                    id="thicknessTolerance"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    value="0"
+                /></label>
+              </div>
+              <label class="check"><input id="brittle" type="checkbox" /> Brittle material</label
+              ><label class="check"
+                ><input id="cam" type="checkbox" /> Apply kerf later in CAM</label
+              >
+            </details>
+          </form>
+          <div class="download-row">
+            <button id="download-svg" class="primary">
+              Download SVG <span aria-hidden="true">↓</span></button
+            ><button id="download-json" class="secondary" aria-label="Download JSON">JSON</button>
+          </div>
+          <button id="calibration" class="text-button">Make a fit-test sheet ↗</button>
+          <p class="small-note">
+            Use measured thickness and a calibrated kerf. Zero tolerance means an ideal geometry
+            check.
+          </p>
+        </aside>
+        <section class="preview-panel" aria-label="Joint preview">
+          <div class="preview-header">
+            <div>
+              <span class="eyebrow" id="preview-kicker">FIVE PARTS, ONE ASSEMBLY</span>
+              <h2 id="preview-title">An open box, from the inside out.</h2>
+            </div>
+            <span class="status" id="status" role="status">Ready</span>
+          </div>
+          <div class="view-tabs" role="group" aria-label="Preview mode">
+            <button id="view-3d" aria-pressed="true">Assembly</button
+            ><button id="view-sheet" aria-pressed="false">Cut sheet</button
+            ><label class="check" id="toolpath-toggle"
+              ><input id="show-toolpath" type="checkbox" /> Show toolpath</label
+            >
+          </div>
+          <div class="stage" id="stage">
+            <div id="three-view" aria-label="Interactive three-dimensional box preview"></div>
+            <div id="sheet-view" hidden></div>
+            <div id="stage-error" role="alert" hidden></div>
+            <div class="stage-caption" id="stage-caption">Drag to orbit · Scroll to zoom</div>
+          </div>
+          <div class="assembly-bar" id="assembly-bar">
+            <button id="animate" aria-pressed="false">▶ Explode / assemble</button
+            ><label for="explosion">Together</label
+            ><input
+              id="explosion"
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              aria-label="Exploded view"
+            /><span>Apart</span>
+          </div>
+          <div class="metrics" id="metrics"></div>
+          <div id="issues" aria-live="polite"></div>
+          <p class="preview-foot" id="preview-foot">
+            Nominal finished geometry. The red toolpath in the cut-sheet view includes kerf
+            compensation.
+          </p>
+        </section>
+      </div>
+      <section class="developer">
+        <div>
+          <p class="eyebrow">FOR PEOPLE AND THEIR AGENTS</p>
+          <h2>One connection.<br />Both sides.</h2>
+          <p>
+            Explicit units, inspectable dimensions, and structured errors. Use the same functions in
+            a browser, a build script, or an agent tool.
+          </p>
+          <p><a href="../docs/DESIGN.md">Read the geometry conventions ↗</a></p>
+        </div>
+        <div class="code-card">
+          <div><span>TypeScript</span><button id="copy-code">Copy example</button></div>
+          <pre id="code"></pre>
+          <span id="copy-status" role="status"></span>
+        </div>
+      </section>
+      <section class="notes">
+        <article>
+          <span>01 / MEASURE</span>
+          <h3>The material sets the fit.</h3>
+          <p>
+            Sheet thickness, cut taper, coatings, and grain all matter. Use the calibration sheet to
+            choose your clearance.
+          </p>
+        </article>
+        <article>
+          <span>02 / COMPENSATE</span>
+          <h3>Kerf, exactly once.</h3>
+          <p>
+            Full beam width goes in. Closed outlines expand and holes contract. Geometry mode needs
+            no extra CAM offset.
+          </p>
+        </article>
+        <article>
+          <span>03 / INSPECT</span>
+          <h3>Know what was checked.</h3>
+          <p>
+            Dimensions and ideal assembly are testable. The preview does not predict material
+            strength or replace a physical fit test.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span>MYLASERTOOLS / LASER JOINTS</span
+      ><span>Open source. Built with Clipper2. <a href="../docs/UPSTREAM.md">Credits ↗</a></span>
+    </footer>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

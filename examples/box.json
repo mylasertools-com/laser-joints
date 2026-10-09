@@ -1,0 +1,11 @@
+{
+  "innerWidthMm": 90,
+  "innerDepthMm": 65,
+  "innerHeightMm": 45,
+  "thicknessMm": 3,
+  "fingerWidthMm": 6,
+  "kerfMm": 0.15,
+  "clearanceMm": 0.08,
+  "minFeatureMm": 1,
+  "minWebMm": 2
+}

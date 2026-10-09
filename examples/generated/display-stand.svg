@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="71.83mm" height="30.15mm" viewBox="0 0 71.83 30.15" fill="none" stroke="#ff0000" stroke-width="0.1">
+  <title>display-stand</title>
+  <metadata>{&quot;schemaVersion&quot;:1,&quot;units&quot;:&quot;mm&quot;,&quot;geometry&quot;:&quot;toolpath&quot;,&quot;placements&quot;:[{&quot;sample&quot;:0,&quot;part&quot;:&quot;sideA&quot;,&quot;translateMm&quot;:[3.075,7.075],&quot;clearanceMm&quot;:0.08},{&quot;sample&quot;:0,&quot;part&quot;:&quot;sideB&quot;,&quot;translateMm&quot;:[35.85,3.1],&quot;clearanceMm&quot;:0.08}],&quot;joints&quot;:[{&quot;kind&quot;:&quot;tab-slot&quot;,&quot;machining&quot;:{&quot;compensation&quot;:&quot;geometry&quot;,&quot;kerfMm&quot;:{&quot;sideA&quot;:0.15,&quot;sideB&quot;:0.2},&quot;additionalOffsetMm&quot;:{&quot;sideA&quot;:0,&quot;sideB&quot;:0}},&quot;measurements&quot;:{&quot;tabWidthMm&quot;:16,&quot;tabDepthMm&quot;:4,&quot;tabThicknessMm&quot;:2.9,&quot;receiverThicknessMm&quot;:4,&quot;slotGaugeWidthMm&quot;:16.08,&quot;slotOverallWidthMm&quot;:16.88,&quot;slotHeightMm&quot;:2.98,&quot;slotEndReliefMm&quot;:0.4,&quot;clearanceMm&quot;:0.08,&quot;leadInMm&quot;:0.4},&quot;fits&quot;:{&quot;width&quot;:{&quot;nominalClearanceMm&quot;:0.879999999999999,&quot;minimumClearanceMm&quot;:0.879999999999999,&quot;maximumClearanceMm&quot;:0.879999999999999,&quot;classification&quot;:&quot;clearance&quot;},&quot;thickness&quot;:{&quot;nominalClearanceMm&quot;:0.08000000000000007,&quot;minimumClearanceMm&quot;:0.08000000000000007,&quot;maximumClearanceMm&quot;:0.08000000000000007,&quot;classification&quot;:&quot;clearance&quot;}},&quot;issues&quot;:[]}]}</metadata>
+  <g id="sample-0-sideA" data-operation="cut" transform="translate(3.075 7.075)">
+    <path id="sample-0-sideA-outline" data-role="outer" d="M6.168934 -4.075 L21.431066 -4.075 L21.875 -3.631066 L21.875 -0.075 L27.675 -0.075 L27.675 20.075 L-0.075 20.075 L-0.075 -0.075 L5.725 -0.075 L5.725 -3.631066 Z"/>
+  </g>
+  <g id="sample-0-sideB" data-operation="cut" transform="translate(35.85 3.1)">
+    <path id="sample-0-sideB-slot" data-role="hole" d="M8.4 8.1 H24.48 A0.3 0.3 0 0 1 24.78 8.4 V10.58 A0.3 0.3 0 0 1 24.48 10.88 H8.4 A0.3 0.3 0 0 1 8.1 10.58 V8.4 A0.3 0.3 0 0 1 8.4 8.1 Z"/>
+    <path id="sample-0-sideB-outline" data-role="outer" d="M-0.1 -0.1 L32.98 -0.1 L32.98 19.08 L-0.1 19.08 Z"/>
+  </g>
+</svg>

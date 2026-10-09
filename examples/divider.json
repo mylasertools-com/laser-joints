@@ -1,0 +1,10 @@
+{
+  "heightMm": 50,
+  "widthMm": 80,
+  "thicknessMm": 3,
+  "mateThicknessMm": 3.2,
+  "kerfMm": 0.18,
+  "clearanceMm": 0.05,
+  "depthClearanceMm": 0.1,
+  "minWebMm": 3
+}

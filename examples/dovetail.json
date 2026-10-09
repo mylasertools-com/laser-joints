@@ -1,0 +1,10 @@
+{
+  "thicknessMm": 3,
+  "kerfMm": 0.15,
+  "clearanceMm": 0.08,
+  "neckWidthMm": 10,
+  "headWidthMm": 18,
+  "depthMm": 8,
+  "depthClearanceMm": 0.1,
+  "minWebMm": 2
+}

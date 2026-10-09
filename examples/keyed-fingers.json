@@ -1,0 +1,9 @@
+{
+  "lengthMm": 100,
+  "thicknessMm": 3,
+  "kerfMm": 0.15,
+  "clearanceMm": 0.05,
+  "targetFingerWidthMm": 6,
+  "key": "front-left",
+  "leadInMm": 0.2
+}

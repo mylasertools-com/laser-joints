@@ -1,0 +1,7 @@
+{
+  "tabWidthMm": 12,
+  "thicknessMm": 2.85,
+  "kerfMm": 0.15,
+  "clearancesMm": [-0.1, -0.05, 0, 0.05, 0.1, 0.15],
+  "leadInMm": 0.25
+}

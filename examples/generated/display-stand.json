@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "kind": "tab-slot",
+  "units": "mm",
+  "sideA": {
+    "id": "sideA",
+    "contours": [
+      {
+        "id": "outline",
+        "role": "outer",
+        "nominal": {
+          "points": [
+            [
+              6.2,
+              -4
+            ],
+            [
+              21.400000000000002,
+              -4
+            ],
+            [
+              21.8,
+              -3.6
+            ],
+            [
+              21.8,
+              0
+            ],
+            [
+              27.6,
+              0
+            ],
+            [
+              27.6,
+              20
+            ],
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              5.8,
+              0
+            ],
+            [
+              5.8,
+              -3.6
+            ]
+          ],
+          "pathData": "M6.2 -4 L21.4 -4 L21.8 -3.6 L21.8 0 L27.6 0 L27.6 20 L0 20 L0 0 L5.8 0 L5.8 -3.6 Z",
+          "bounds": {
+            "x": 0,
+            "y": -4,
+            "width": 27.6,
+            "height": 24
+          }
+        },
+        "toolpath": {
+          "points": [
+            [
+              6.168934,
+              -4.075
+            ],
+            [
+              21.431066,
+              -4.075
+            ],
+            [
+              21.875,
+              -3.631066
+            ],
+            [
+              21.875,
+              -0.075
+            ],
+            [
+              27.675,
+              -0.075
+            ],
+            [
+              27.675,
+              20.075
+            ],
+            [
+              -0.075,
+              20.075
+            ],
+            [
+              -0.075,
+              -0.075
+            ],
+            [
+              5.725,
+              -0.075
+            ],
+            [
+              5.725,
+              -3.631066
+            ]
+          ],
+          "pathData": "M6.168934 -4.075 L21.431066 -4.075 L21.875 -3.631066 L21.875 -0.075 L27.675 -0.075 L27.675 20.075 L-0.075 20.075 L-0.075 -0.075 L5.725 -0.075 L5.725 -3.631066 Z",
+          "bounds": {
+            "x": -0.075,
+            "y": -4.075,
+            "width": 27.75,
+            "height": 24.15
+          }
+        }
+      }
+    ],
+    "bounds": {
+      "x": -0.075,
+      "y": -4.075,
+      "width": 27.75,
+      "height": 24.15
+    }
+  },
+  "sideB": {
+    "id": "sideB",
+    "contours": [
+      {
+        "id": "outline",
+        "role": "outer",
+        "nominal": {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              32.879999999999995,
+              0
+            ],
+            [
+              32.879999999999995,
+              18.98
+            ],
+            [
+              0,
+              18.98
+            ]
+          ],
+          "pathData": "M0 0 L32.88 0 L32.88 18.98 L0 18.98 Z",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 32.879999999999995,
+            "height": 18.98
+          }
+        },
+        "toolpath": {
+          "points": [
+            [
+              -0.1,
+              -0.1
+            ],
+            [
+              32.98,
+              -0.1
+            ],
+            [
+              32.98,
+              19.08
+            ],
+            [
+              -0.1,
+              19.08
+            ]
+          ],
+          "pathData": "M-0.1 -0.1 L32.98 -0.1 L32.98 19.08 L-0.1 19.08 Z",
+          "bounds": {
+            "x": -0.1,
+            "y": -0.1,
+            "width": 33.08,
+            "height": 19.18
+          }
+        }
+      },
+      {
+        "id": "slot",
+        "role": "hole",
+        "nominal": {
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 16.88,
+            "height": 2.98
+          },
+          "pathData": "M8.4 8 H24.48 A0.4 0.4 0 0 1 24.88 8.4 V10.58 A0.4 0.4 0 0 1 24.48 10.98 H8.4 A0.4 0.4 0 0 1 8 10.58 V8.4 A0.4 0.4 0 0 1 8.4 8 Z"
+        },
+        "toolpath": {
+          "bounds": {
+            "x": 8.1,
+            "y": 8.1,
+            "width": 16.68,
+            "height": 2.78
+          },
+          "pathData": "M8.4 8.1 H24.48 A0.3 0.3 0 0 1 24.78 8.4 V10.58 A0.3 0.3 0 0 1 24.48 10.88 H8.4 A0.3 0.3 0 0 1 8.1 10.58 V8.4 A0.3 0.3 0 0 1 8.4 8.1 Z"
+        }
+      }
+    ],
+    "bounds": {
+      "x": -0.1,
+      "y": -0.1,
+      "width": 33.08,
+      "height": 19.18
+    }
+  },
+  "edges": {
+    "sideA": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          5.8,
+          0
+        ],
+        [
+          5.8,
+          -3.6
+        ],
+        [
+          6.2,
+          -4
+        ],
+        [
+          21.400000000000002,
+          -4
+        ],
+        [
+          21.8,
+          -3.6
+        ],
+        [
+          21.8,
+          0
+        ],
+        [
+          27.6,
+          0
+        ]
+      ],
+      "pathData": "M0 0 L5.8 0 L5.8 -3.6 L6.2 -4 L21.4 -4 L21.8 -3.6 L21.8 0 L27.6 0",
+      "closed": false,
+      "compensation": "none",
+      "materialSide": "positive-y"
+    }
+  },
+  "measurements": {
+    "tabWidthMm": 16,
+    "tabDepthMm": 4,
+    "tabThicknessMm": 2.9,
+    "receiverThicknessMm": 4,
+    "slotGaugeWidthMm": 16.08,
+    "slotOverallWidthMm": 16.88,
+    "slotHeightMm": 2.98,
+    "slotEndReliefMm": 0.4,
+    "clearanceMm": 0.08,
+    "leadInMm": 0.4
+  },
+  "fits": {
+    "width": {
+      "nominalClearanceMm": 0.879999999999999,
+      "minimumClearanceMm": 0.879999999999999,
+      "maximumClearanceMm": 0.879999999999999,
+      "classification": "clearance"
+    },
+    "thickness": {
+      "nominalClearanceMm": 0.08000000000000007,
+      "minimumClearanceMm": 0.08000000000000007,
+      "maximumClearanceMm": 0.08000000000000007,
+      "classification": "clearance"
+    }
+  },
+  "issues": [],
+  "machining": {
+    "compensation": "geometry",
+    "kerfMm": {
+      "sideA": 0.15,
+      "sideB": 0.2
+    },
+    "additionalOffsetMm": {
+      "sideA": 0,
+      "sideB": 0
+    }
+  }
+}

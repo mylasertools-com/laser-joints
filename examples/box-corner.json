@@ -1,0 +1,12 @@
+{
+  "lengthMm": 100,
+  "thicknessMm": 2.85,
+  "targetFingerWidthMm": 6,
+  "kerfMm": 0.15,
+  "clearanceMm": 0.05,
+  "endMarginMm": 6,
+  "leadInMm": 0.25,
+  "minFeatureMm": 1,
+  "minWebMm": 2,
+  "tolerances": { "thicknessMm": 0.05, "cutMm": 0.02 }
+}

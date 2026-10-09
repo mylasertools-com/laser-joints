@@ -1,0 +1,11 @@
+{
+  "tabWidthMm": 16,
+  "thicknessMm": 2.9,
+  "mateThicknessMm": 4,
+  "kerfMm": { "sideA": 0.15, "sideB": 0.2 },
+  "clearanceMm": 0.08,
+  "leadInMm": 0.4,
+  "slotEndReliefMm": 0.4,
+  "brittleMaterial": true,
+  "minWebMm": 3
+}

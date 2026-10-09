@@ -1,0 +1,10 @@
+# Changelog
+
+## 0.1.0 — 2026-10-09
+
+- Matching finger, keyed finger, tab-slot, cross-lap and dovetail joint generators.
+- Five-panel raised-bottom box with assembly transforms.
+- Explicit full-kerf compensation, total clearance, measured thickness, tolerance estimates, feature/web limits and structured diagnostics.
+- Deterministic SVG/JSON output, rigid edge placement, calibration coupons and a bounded CLI.
+- Interactive offline demo, real preview GIFs, dimensional/assembly tests and packed-consumer checks.
+- Strict TypeScript throughout the library, CLI, demo, tooling and tests; compiled ESM/CommonJS with generated declarations.

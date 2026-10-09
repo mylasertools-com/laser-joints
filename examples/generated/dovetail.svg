@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="71.3mm" height="34.15mm" viewBox="0 0 71.3 34.15" fill="none" stroke="#ff0000" stroke-width="0.1">
+  <title>dovetail</title>
+  <metadata>{&quot;schemaVersion&quot;:1,&quot;units&quot;:&quot;mm&quot;,&quot;geometry&quot;:&quot;toolpath&quot;,&quot;placements&quot;:[{&quot;sample&quot;:0,&quot;part&quot;:&quot;sideA&quot;,&quot;translateMm&quot;:[3.075,11.075],&quot;clearanceMm&quot;:0.08},{&quot;sample&quot;:0,&quot;part&quot;:&quot;sideB&quot;,&quot;translateMm&quot;:[38.225,3.075],&quot;clearanceMm&quot;:0.08}],&quot;joints&quot;:[{&quot;kind&quot;:&quot;dovetail&quot;,&quot;machining&quot;:{&quot;compensation&quot;:&quot;geometry&quot;,&quot;kerfMm&quot;:{&quot;sideA&quot;:0.15,&quot;sideB&quot;:0.15},&quot;additionalOffsetMm&quot;:{&quot;sideA&quot;:0,&quot;sideB&quot;:0}},&quot;measurements&quot;:{&quot;neckWidthMm&quot;:10,&quot;headWidthMm&quot;:18,&quot;depthMm&quot;:8,&quot;depthClearanceMm&quot;:0.1,&quot;clearanceMm&quot;:0.08,&quot;flareAngleDeg&quot;:26.56505117707799},&quot;fits&quot;:{&quot;throat&quot;:{&quot;nominalClearanceMm&quot;:0.08000000000000007,&quot;minimumClearanceMm&quot;:0.08000000000000007,&quot;maximumClearanceMm&quot;:0.08000000000000007,&quot;classification&quot;:&quot;clearance&quot;}},&quot;issues&quot;:[{&quot;code&quot;:&quot;SHARP_INTERNAL_CORNERS&quot;,&quot;severity&quot;:&quot;warning&quot;,&quot;message&quot;:&quot;Nominal square recesses do not model beam rounding, taper or material stress. Test the fit; use relief where appropriate.&quot;}]}]}</metadata>
+  <g id="sample-0-sideA" data-operation="cut" transform="translate(3.075 11.075)">
+    <path id="sample-0-sideA-outline" data-role="outer" d="M5.878647 -8.075 L24.121353 -8.075 L20.121353 -0.075 L30.075 -0.075 L30.075 20.075 L-0.075 20.075 L-0.075 -0.075 L9.878647 -0.075 Z"/>
+  </g>
+  <g id="sample-0-sideB" data-operation="cut" transform="translate(38.225 3.075)">
+    <path id="sample-0-sideB-outline" data-role="outer" d="M-0.075 -0.075 L10.081353 -0.075 L6.031353 8.025 L23.968647 8.025 L19.918647 -0.075 L30.075 -0.075 L30.075 20.075 L-0.075 20.075 Z"/>
+  </g>
+</svg>
