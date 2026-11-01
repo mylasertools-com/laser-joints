@@ -2,7 +2,7 @@
 
 **Matching laser-cut joints for people and their generators.**
 
-[Interactive demo](https://mylasertools-com.github.io/laser-joints/demo/) · [API reference](docs/API.md) · [Report an issue](https://github.com/mylasertools-com/laser-joints/issues)
+[Interactive demo](https://mylasertools.github.io/laser-joints/demo/) · [API reference](docs/API.md) · [Report an issue](https://github.com/mylasertools/laser-joints/issues)
 
 Generate both sides together, inspect the finished dimensions, and export closed SVG cutting paths. Includes finger joints, keyed fingers, tab-and-slot joints, cross-laps, dovetail splices, and a complete five-panel box.
 
@@ -88,7 +88,7 @@ const cutSheet = toSvg(box);
 
 ## See it work
 
-Try the [interactive demo](https://mylasertools-com.github.io/laser-joints/demo/): change all six examples, orbit or explode the box, inspect toolpaths, download SVG/JSON, and make a fit-test sheet. The animation is an exploded inspection view; the tested insertion sequence is in the [geometry conventions](docs/DESIGN.md).
+Try the [interactive demo](https://mylasertools.github.io/laser-joints/demo/): change all six examples, orbit or explode the box, inspect toolpaths, download SVG/JSON, and make a fit-test sheet. The animation is an exploded inspection view; the tested insertion sequence is in the [geometry conventions](docs/DESIGN.md).
 
 ![Laser Joints working demo](docs/assets/demo.png)
 
@@ -118,7 +118,7 @@ Use `-` for stdin. Existing output files are never overwritten. JSON is the defa
 - [Geometry and assembly conventions](docs/DESIGN.md) — fit equations, material direction, relief and limitations
 - [Upstream decisions](docs/UPSTREAM.md) — Clipper2, BoxBurner, and fabrication references
 - [Seven runnable examples](examples/) and their generated SVGs/JSON
-- [Contributing](https://github.com/mylasertools-com/laser-joints/blob/main/CONTRIBUTING.md)
+- [Contributing](https://github.com/mylasertools/laser-joints/blob/main/CONTRIBUTING.md)
 
 The tests check ideal geometry and simulated assembly. They do not establish strength, compensate taper/grain/coatings, or replace physical fit coupons. No hardware cuts are claimed. This release supports the joint families above, not every form of joinery, a nesting engine, or arbitrary polygon CAM.
 

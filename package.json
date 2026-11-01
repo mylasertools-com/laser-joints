@@ -1,17 +1,17 @@
 {
   "name": "@mylasertools/laser-joints",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Matching laser-cut joints, keyed fingers, dovetail splices, and assembled boxes with explicit kerf, clearance, calibration, and diagnostics.",
   "type": "module",
   "license": "MIT",
   "author": "MyLaserTools",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mylasertools-com/laser-joints.git"
+    "url": "git+https://github.com/mylasertools/laser-joints.git"
   },
-  "homepage": "https://mylasertools-com.github.io/laser-joints/demo/",
+  "homepage": "https://mylasertools.github.io/laser-joints/demo/",
   "bugs": {
-    "url": "https://github.com/mylasertools-com/laser-joints/issues"
+    "url": "https://github.com/mylasertools/laser-joints/issues"
   },
   "keywords": [
     "laser-cutting",
