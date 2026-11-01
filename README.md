@@ -20,7 +20,7 @@ Install from npm:
 npm install @mylasertools/laser-joints
 ```
 
-The library, CLI, demo, scripts, and tests are authored in strict TypeScript. The package ships compiled JavaScript for browsers and Node.js, with generated TypeScript declarations for both module formats.
+The package ships JavaScript for browsers and Node.js, with TypeScript declarations for both module formats.
 
 ```ts
 import { createFingerJointPair, toSvg } from '@mylasertools/laser-joints';
@@ -88,13 +88,7 @@ const cutSheet = toSvg(box);
 
 ## See it work
 
-```sh
-npm run build:demo
-npm run demo
-# Open http://127.0.0.1:4178/demo/
-```
-
-The demo runs locally without external fonts, analytics, CDN scripts, or API calls. Change all six examples, orbit/explode the box, inspect toolpaths, download SVG/JSON, and make a fit-test sheet. Once built, `demo/` can be served statically alongside `docs/`. The animation is an exploded inspection view; the tested insertion sequence is documented separately.
+Try the [interactive demo](https://mylasertools-com.github.io/laser-joints/demo/): change all six examples, orbit or explode the box, inspect toolpaths, download SVG/JSON, and make a fit-test sheet. The animation is an exploded inspection view; the tested insertion sequence is in the [geometry conventions](docs/DESIGN.md).
 
 ![Laser Joints working demo](docs/assets/demo.png)
 
@@ -118,22 +112,13 @@ laser-joints calibration examples/calibration.json --format svg --output fit.svg
 
 Use `-` for stdin. Existing output files are never overwritten. JSON is the default; SVG diagnostics go to stderr. See [agent integration](docs/AGENT-INTEGRATION.md).
 
-## Documentation and validation
+## Documentation
 
 - [API reference](docs/API.md) — options, defaults, return values and error codes
 - [Geometry and assembly conventions](docs/DESIGN.md) — fit equations, material direction, relief and limitations
-- [Validation evidence](docs/VALIDATION.md) — dimensional, assembly, browser and packed-consumer checks
 - [Upstream decisions](docs/UPSTREAM.md) — Clipper2, BoxBurner, and fabrication references
-- [Release and contributor guide](docs/CONTRIBUTING.md)
 - [Seven runnable examples](examples/) and their generated SVGs/JSON
-
-```sh
-npm run check
-npm run examples
-npm run test:package
-npx playwright install chromium firefox webkit
-npm run test:browser
-```
+- [Contributing](https://github.com/mylasertools-com/laser-joints/blob/main/CONTRIBUTING.md)
 
 The tests check ideal geometry and simulated assembly. They do not establish strength, compensate taper/grain/coatings, or replace physical fit coupons. No hardware cuts are claimed. This release supports the joint families above, not every form of joinery, a nesting engine, or arbitrary polygon CAM.
 

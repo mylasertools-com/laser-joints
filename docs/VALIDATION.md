@@ -23,7 +23,7 @@ The screenshot and GIF capture command (`npm run capture`, ffmpeg required) oper
 
 ## Distribution
 
-`npm run test:package` packs the actual whitelist, installs the tarball into a fresh temporary consumer **offline**, checks ESM and CommonJS imports, compiles consumers in TypeScript `.mts` and `.cts` modes, and invokes the installed CLI. It also checks required license/docs files and excludes node_modules, QA output and secrets-like filenames. The npm package has no runtime install dependencies; Clipper2 is bundled with notices.
+`npm run test:package` packs the actual whitelist, installs the tarball into a fresh temporary consumer **offline**, checks ESM and CommonJS imports, compiles consumers in TypeScript `.mts` and `.cts` modes, and invokes the installed CLI. It also checks required license/docs files and excludes node_modules, test output and secrets-like filenames. The npm package has no runtime install dependencies; Clipper2 is bundled with notices.
 
 CI is configured for Node 20/22/24 on Linux and Windows, plus the browser suite on Linux. Local execution does not prove those CI jobs have run. The validation commands must pass again for a release; dependency updates require rerunning geometry and browser checks.
 

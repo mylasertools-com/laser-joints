@@ -25,9 +25,7 @@ createServer(async (req, res) => {
     const file = resolve(root, '.' + pathname);
     if (
       !file.startsWith(root + sep) ||
-      !['/demo/', '/dist/', '/docs/', '/examples/', '/qa-dist/'].some((p) =>
-        pathname.startsWith(p),
-      ) ||
+      !['/demo/', '/dist/', '/docs/', '/examples/'].some((p) => pathname.startsWith(p)) ||
       pathname.split('/').some((p) => p.startsWith('.'))
     ) {
       res.writeHead(403).end();

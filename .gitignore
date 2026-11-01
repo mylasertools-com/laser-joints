@@ -2,7 +2,7 @@ node_modules/
 dist/
 *.tgz
 test-results/
-qa-dist/
 playwright-report/
 .pack-test/
 site/
+qa-dist/

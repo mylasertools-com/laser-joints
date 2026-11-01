@@ -1,6 +1,6 @@
 {
   "name": "@mylasertools/laser-joints",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Matching laser-cut joints, keyed fingers, dovetail splices, and assembled boxes with explicit kerf, clearance, calibration, and diagnostics.",
   "type": "module",
   "license": "MIT",
@@ -44,7 +44,10 @@
   },
   "files": [
     "dist",
-    "docs",
+    "docs/API.md",
+    "docs/AGENT-INTEGRATION.md",
+    "docs/DESIGN.md",
+    "docs/UPSTREAM.md",
     "examples",
     "README.md",
     "LICENSE",

@@ -2,8 +2,8 @@ dist
 node_modules
 package-lock.json
 examples/generated
-qa-dist
 test-results
 playwright-report
 .pack-test
 site
+qa-dist

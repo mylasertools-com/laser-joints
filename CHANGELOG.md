@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-01
+
+- The npm package contains only usage documentation: the API reference, agent integration, geometry conventions and credits.
+- The README links to the online demo instead of local development commands.
+
 ## 0.1.0 — 2026-10-09
 
 - Matching finger, keyed finger, tab-slot, cross-lap and dovetail joint generators.
