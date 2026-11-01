@@ -22,7 +22,7 @@ For screenshots/GIFs, install ffmpeg, then run `npm run build:demo` and `npm run
 - For new shapes, test actual resulting paths and beam-removal dimensions, not just measurements copied from inputs. Check topology, minimum webs, corner behavior and a possible assembly direction.
 - Preserve deterministic output, strict unknown-option validation, bounded complexity and ESM/CommonJS declaration parity.
 - Keep finished nominal geometry separate from cutting centerlines. Do not add text or preview dimensions to the cutting layer.
-- Describe the evidence honestly: software checks are not physical material tests. A new shape needs documented assembly and relief limits.
+- Software checks are not physical material tests. A new shape needs documented assembly and relief limits.
 - Preserve third-party notices when updating bundled dependencies or generating a standalone demo distribution.
 
 ## Release checklist
@@ -31,6 +31,6 @@ For screenshots/GIFs, install ffmpeg, then run `npm run build:demo` and `npm run
 2. Rebuild GIFs when geometry or appearance changes, and update validation documentation when scope changes.
 3. Run `npm pack --dry-run` and inspect the whitelist; then `npm pack` produces the reviewable tarball. `prepack` runs the build, strict type checks, geometry/CLI tests and size check.
 4. Check the version and changelog, and verify the repository and demo links.
-5. npm publication requires the maintainer's explicit release decision. Verify the authenticated npm/GitHub accounts and repository-local author/committer identity before publishing or committing.
+5. Publish to npm from `main` after these checks.
 
 CI validates pull requests and pushes. The Pages workflow deploys the demo from `main` after validation, or can be dispatched manually. `npm run build:site` prepares only the compiled demo, docs, examples, and license notices for Pages. npm releases are published manually after these checks.
